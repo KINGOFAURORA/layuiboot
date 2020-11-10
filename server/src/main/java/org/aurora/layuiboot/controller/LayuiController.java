@@ -8,10 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @date 2020/11/9 10:15
  */
 @Controller
-@RequestMapping("/layui")
 public class LayuiController {
     @RequestMapping("/index")
     public String index() {
-        return "index.html";
+        return "index";
     }
 }

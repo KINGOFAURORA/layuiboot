@@ -26,15 +26,15 @@
         <!--            </li>-->
         <!--        </ul>-->
         <ul class="layui-nav layui-layout-left" lay-filter="">
-            <li class="layui-nav-item"><a href="">最新活动</a></li>
-            <li class="layui-nav-item layui-this"><a href="">产品</a></li>
-            <li class="layui-nav-item"><a href="">大数据</a></li>
+            <li class="layui-nav-item"><a href="">水平导航1</a></li>
+            <li class="layui-nav-item layui-this"><a href="">水平导航2</a></li>
+            <li class="layui-nav-item"><a href="">水平导航3</a></li>
             <li class="layui-nav-item">
-                <a href="javascript:;">解决方案</a>
+                <a href="javascript:;">水平导航4</a>
                 <dl class="layui-nav-child"> <!-- 二级菜单 -->
-                    <dd><a href="">移动模块</a></dd>
-                    <dd><a href="">后台模版</a></dd>
-                    <dd><a href="">电商平台</a></dd>
+                    <dd><a href="">二级菜单1</a></dd>
+                    <dd><a href="">二级菜单2</a></dd>
+                    <dd><a href="">二级菜单3</a></dd>
                 </dl>
             </li>
         </ul>
@@ -62,24 +62,22 @@
             <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
             <ul class="layui-nav layui-nav-tree"  lay-filter="test">
                 <li class="layui-nav-item layui-nav-itemed">
-                    <a href="javascript:;">所有商品</a>
+                    <a href="javascript:;">垂直导航1</a>
                     <dl class="layui-nav-child">
                         <dd><a href="javascript:;">列表一</a></dd>
                         <dd><a href="javascript:;">列表二</a></dd>
                         <dd><a href="javascript:;">列表三</a></dd>
-                        <dd><a href="">超链接</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item">
-                    <a href="javascript:;">解决方案</a>
+                    <a href="javascript:;">垂直导航2</a>
                     <dl class="layui-nav-child">
                         <dd><a href="javascript:;">列表一</a></dd>
                         <dd><a href="javascript:;">列表二</a></dd>
-                        <dd><a href="">超链接</a></dd>
                     </dl>
                 </li>
-                <li class="layui-nav-item"><a href="">云市场</a></li>
-                <li class="layui-nav-item"><a href="">发布商品</a></li>
+                <li class="layui-nav-item"><a href="">垂直导航3</a></li>
+                <li class="layui-nav-item"><a href="">垂直导航4</a></li>
             </ul>
         </div>
     </div>
@@ -94,6 +92,7 @@
                     <li>权限分配</li>
                     <li>商品管理</li>
                     <li>订单管理</li>
+                    <li>信息列表</li>
                 </ul>
                 <div class="layui-tab-content">
                     <div class="layui-tab-item layui-show">
@@ -202,6 +201,11 @@
                         </button>
 
                         <div id="treeTest"></div>
+                    </div>
+                    <div class="layui-tab-item">
+                        列表
+                        <table class="layui-hide" id="test"></table>
+
                     </div>
                 </div>
             </div>
