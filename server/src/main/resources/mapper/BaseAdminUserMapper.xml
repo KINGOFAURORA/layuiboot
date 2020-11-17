@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="org.aurora.layuiboot.dao..BaseAdminUserDAO">
+<mapper namespace="org.aurora.layuiboot.dao.BaseAdminUserDAO">
   <resultMap id="BaseResultMap" type="org.aurora.layuiboot.po.BaseAdminUser">
     <id column="id" property="id" />
     <result column="sys_user_name" property="sysUserName" />
@@ -63,7 +63,7 @@
     SELECT <include refid="baseColumn"/>
     FROM base_admin_user
     WHERE sys_user_name = #{userName}
-    and user_status = 1
+    AND user_status = 1
   </select>
 
   <select id="getUserList" resultType="org.aurora.layuiboot.dto.AdminUserDTO">

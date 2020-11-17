@@ -2,7 +2,9 @@ package org.aurora.layuiboot.test.dao;
 
 import org.aurora.layuiboot.bootstrap.BootStrap;
 import org.aurora.layuiboot.dao.BaseAdminPermissionDAO;
+import org.aurora.layuiboot.dao.BaseAdminUserDAO;
 import org.aurora.layuiboot.dto.PermissionDTO;
+import org.aurora.layuiboot.po.BaseAdminUser;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -23,6 +25,14 @@ public class BaseAdminPermissionDAOTest {
 
     @Resource
     private BaseAdminPermissionDAO baseAdminPermissionDAO;
+    @Resource
+    private BaseAdminUserDAO BaseAdminUserDAO;
+
+    @Test
+    public void testGetUserByName(){
+        BaseAdminUser baseAdminUser = BaseAdminUserDAO.findByUserName("1");
+        System.out.println(baseAdminUser);
+    }
 
     @Test
     public void test(){
