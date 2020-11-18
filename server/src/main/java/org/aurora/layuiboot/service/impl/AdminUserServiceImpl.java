@@ -8,7 +8,6 @@ import org.aurora.layuiboot.response.PageDataResult;
 import org.aurora.layuiboot.service.AdminUserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -31,15 +30,12 @@ public class AdminUserServiceImpl implements AdminUserService {
     @Override
     public PageDataResult getUserList(UserSearchDTO userSearch, Integer pageNum, Integer pageSize) {
         PageDataResult pageDataResult = new PageDataResult();
-//        List<AdminUserDTO> baseAdminUsers = baseAdminUserDAO.getUserList(userSearch);
-//
-//        PageHelper.startPage(pageNum, pageSize);
-//
-//        if(baseAdminUsers.size() != 0){
-//            PageInfo<AdminUserDTO> pageInfo = new PageInfo<>(baseAdminUsers);
-//            pageDataResult.setList(baseAdminUsers);
-//            pageDataResult.setTotals((int) pageInfo.getTotal());
-//        }
+        List<AdminUserDTO> baseAdminUsers = baseAdminUserDAO.getUserList(userSearch);
+
+        if(baseAdminUsers.size() != 0){
+            pageDataResult.setList(baseAdminUsers);
+            pageDataResult.setTotals(3);
+        }
 
         return pageDataResult;
     }
